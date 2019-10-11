@@ -1,0 +1,32 @@
+DEADLINE: WEEK 12
+Tasks:
+o homepage
+--o logo animation
+--o upcoming activities
+--o announcements
+o activities
+--o upcoming activities
+--o previous activities
+--o sidebar
+o members
+--o sponsor
+--o officers
+--o sidebar
+o achievements 
+--o by month
+o rules and bylaws
+--o pdf
+o about us
+--o visit us at
+o navbar
+o database
+
+
+Personal Tasks:
+o read laravel documentation
+o set specific deadlines
+
+
+
+
+

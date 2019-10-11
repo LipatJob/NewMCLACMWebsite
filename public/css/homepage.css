@@ -1,0 +1,12 @@
+#banner{
+    width: 100%;
+}
+
+#homeitem{
+    min-height: 100px;
+}
+
+#itemimage{
+    width: 100%;
+    overflow: hidden;
+}
