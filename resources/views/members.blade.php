@@ -8,7 +8,7 @@
 
 
 <div class="">
-    <h4 class="my-5">Sponsor</h4>
+    <h4 class="my-5" id="sponsor">Sponsor</h4>
     <div class="mx-5 shadow-sm">
         <div class="row">
             <div class="col-6">
@@ -26,7 +26,7 @@
 </div>
 
 <div class="">
-        <h4 class="my-5">Officers</h4>
+        <h4 class="my-5" id="officers">Officers</h4>
         <div class="mx-5 shadow-sm">
             <div class="row">
                 <div class="col-6">
@@ -45,8 +45,8 @@
 
 
 <div>
-    <h5 class="my-5">Members</h5>
-    <table class="table " style="width: 100%" id="members">
+    <h5 class="my-5" id="members">Members</h5>
+    <table class="table " style="width: 100%" id="membersTable">
         <thead>
             <tr>
                 <th scope="col">Name</th>
@@ -69,7 +69,7 @@
 
 <script>
     $(document).ready( function () {
-        $('#members').DataTable();
+        $('#membersTable').DataTable();
     } );
 </script>
 
@@ -80,10 +80,11 @@
 </style>
 @endsection
 
+
 @section('sidebar')
 <ul class="nav flex-column my-5" id="">
-    <li class="nav-item"><a class="nav-link" href=""> Sponsor</a></li>
-    <li class="nav-item"><a class="nav-link" href=""> Officers</a></li>
-    <li class="nav-item"><a class="nav-link" href=""> Members</a></li>
+    <li class="nav-item"><a class="nav-link" href="#sponsor"> Sponsor</a></li>
+    <li class="nav-item"><a class="nav-link" href="#officers"> Officers</a></li>
+    <li class="nav-item"><a class="nav-link" href="#members"> Members</a></li>
 </ul>
 @endsection

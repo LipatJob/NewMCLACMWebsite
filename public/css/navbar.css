@@ -5,6 +5,12 @@
     box-shadow: 0 4px 6px -6px #222;
 }
 
-#navbar #navitems .nav-link{
-    font-size: 1.15rem
+.navbar .navbar-nav .nav-link{
+    font-size: 1.15rem;
+    color: white;
+    
+}
+
+.nav-link:hover{
+    color: #b8b8b8;
 }

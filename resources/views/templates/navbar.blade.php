@@ -1,5 +1,4 @@
-<link rel="stylesheet" href="{{ asset('css/navbar.css') }}">
-<nav class="navbar navbar-expand-lg navbar-dark" id="navbar">
+<nav class="navbar navbar-expand-lg" id="navbar">
     <a class="navbar-brand px-5" href="{{URL('/')}}">
       <img src="{{URL('/images/mcllogo.png')}}" width="50" height="50" class="d-inline-block align-top">
       <img src="{{URL('/images/acmlogo.png')}}" width="50" height="50" class="d-inline-block align-top">
@@ -31,3 +30,5 @@
       </ul>
     </div>
   </nav>
+<link rel="stylesheet" href="{{ asset('css/navbar.css') }}">
+

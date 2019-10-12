@@ -12,9 +12,10 @@ class HomeController extends Controller
 
     public function index()
     {
-        $upcoming=activities::get()->where('Date', '>=', Carbon::now())->sortBy("Date")->first();
-        $announcement=achievements::get()->sortByDesc("Date")->first();
-        return view('home',['announcement'=>$announcement,'upcoming'=>$upcoming]);
+        $maxItems=10;
+        $activities=activities::get()->where('Date', '>=', Carbon::now())->sortBy("Date");
+        $announcements=achievements::get()->sortByDesc("Date");
+        return view('home',['announcements'=>$announcements,'activities'=>$activities]);
     }
 
 }

@@ -40,8 +40,12 @@
 
 @section('sidebar')
 <ul class="nav flex-column my-5" id="">
-    <li class="nav-item"><a class="nav-link" href=""> Upcoming Activities</a></li>
-    <li class="nav-item"><a class="nav-link" href=""> Previous Activities</a></li>
+    @foreach ($achievements as $year)
+    <li class="nav-item ml-2"><a class="nav-link" href="#{{$year['year']}}">{{$year['year']}}</a></li>
+        @foreach ($year['months'] as $month)
+            <li class="nav-item ml-4"><a class="nav-link" href="#{{$year['year']}}{{$month['month']}}">{{ date("F", mktime(0, 0, 0, $month['month'], 1)) }}</a></li>
+        @endforeach
+    @endforeach
     <li class="nav-item ml-4"><a class="nav-link" href=""> October</a></li>
 </ul>
 @endsection

@@ -13,6 +13,15 @@ class ActivitiesController extends Controller
 
     public function index()
     {
+        /* 
+            To future developers,
+
+            I am so sorry
+
+            Sincerely yours,
+            Job :)
+            
+        */
         $years=DB::table('activities')->select(DB::raw('YEAR(Date) as year'))->where('Date',">=",Carbon::now())->groupBy('year')->get();
         $upcoming=array();
         
